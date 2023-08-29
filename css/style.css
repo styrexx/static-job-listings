@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(180, 52%, 96%);
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.fw_bold {
+  font-weight: 700;
+}
+.fw_normal {
+  font-weight: 500;
+}
+.featborder {
+  border-left: 4px solid hsl(180, 29%, 50%);
+}
+
+.main-color {
+  color: hsl(180, 29%, 50%);
+}
+.main-bg {
+  background-color: hsl(180, 29%, 50%);
+}
+
+.light-Bg-GrayishCyan {
+  background-color: hsl(180, 52%, 96%);
+}
+
+.light-Bg-GrayishCyanFilter {
+  background-color: hsl(180, 31%, 95%);
+}
+
+.dark-GrayishCyan {
+  color: hsl(180, 8%, 52%);
+}
+.dark-Bg-GrayishCyan {
+  background-color: hsl(180, 8%, 52%);
+}
+
+.very-DarkGrayishCyan {
+  color: hsl(180, 14%, 20%);
+}
+.very-bg-DarkGrayishCyan {
+  background-color: hsl(180, 14%, 20%);
+}
+.container {
+  max-width: 900px;
+}
+
+/* Header Section */
+header {
+  height: 130px;
+  margin-bottom: 60px;
+  background-image: url(../images/bg-header-desktop.svg);
+  background-color: hsl(180, 29%, 50%);
+  position: relative;
+}
+header .filter {
+  position: relative;
+  max-width: 800px;
+  z-index: 2;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  box-shadow: 0px 4px 5px 3px hsla(180, 28.6%, 50%, 0.22);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 15px;
+  display: none;
+}
+header .filter .left {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+header .filter .left > div {
+  width: 90;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(180, 29%, 50%);
+  background-color: hsl(180, 52%, 96%);
+  border-radius: 4px;
+  padding-right: 35px;
+  padding-left: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+header .filter .left > div::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: hsl(180, 29%, 50%);
+  height: 100%;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/icon-remove.svg);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header .filter .left > div:hover::before {
+  background-color: hsl(180, 14%, 20%);
+}
+header .filter .right {
+  color: hsl(180, 29%, 50%);
+  text-transform: capitalize;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+  padding: 10px;
+}
+header .filter .right:hover {
+  opacity: 0.7;
+}
+
+/* job section */
+.job {
+  flex: 1;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0px 4px 5px 3px hsla(180, 28.6%, 50%, 0.22);
+  position: relative;
+}
+.job .imgJob {
+  width: 70px;
+}
+@media (max-width: 360px) {
+  .job {
+    padding-top: 35px !important;
+    margin-top: 35px !important;
+  }
+  .job .imgJob {
+    position: absolute;
+    top: -35px;
+    width: 60px;
+  }
+}
+.job .textJob .textJob-head,
+.job .textJob .textJob-footer {
+  font-size: 13px;
+}
+.job .textJob .header-title {
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px !important;
+}
+.job .textJob .header-title:hover {
+  color: hsl(180, 29%, 50%);
+}
+.job .textJob .textJob-head .new,
+.job .textJob .textJob-head .feat {
+  padding: 1px 6px;
+}
+.job ul > .ctg {
+  padding: 2px 6px;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(180, 29%, 50%);
+  background-color: hsl(180, 52%, 96%);
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.job ul > .ctg:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  cursor: pointer;
+}
+
+header .filter.active {
+  display: flex;
+}
+/* footer of design */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
