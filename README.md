@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/styrexx/)
-- Live Site URL: [Live site URL here](https://styrexx.github.io/)
+- Solution URL: [Solution URL here](https://github.com/styrexx/static-job-listings)
+- Live Site URL: [Live site URL here](https://styrexx.github.io/static-job-listings)
 
 ## My process
 
