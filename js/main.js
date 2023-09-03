@@ -33,7 +33,7 @@ function gatedata() {
   };
 
   // req.open("GET", "../data.json");
-  req.open("GET", "/static-job-listings/data.json");
+  req.open("GET", "https://styrexx.github.io/static-job-listings/data.json");
   req.send();
 }
 
